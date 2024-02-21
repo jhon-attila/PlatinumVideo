@@ -1,0 +1,546 @@
+@import './geral.css';
+
+/*Inicio da barra de navegação*/
+/* Logo*/
+label.logo img{
+    height:80%;
+    width: 120%;
+    margin-top: 4%;
+    margin-left: 10%;
+    transition: 0.5s;
+}
+label.logo img:hover{
+    transform: scale(1.15);
+
+}
+.pesquisa{
+    width: 30%;
+    margin-left:20%;
+}
+.src{
+    margin-top: 1.3em;
+    width: 95%;
+    height:45%;
+    background-color: #080a12a4;
+    border:1px;
+    border-radius: 7px 7px 7px 7px;
+    font-size: 1.2em;
+    color:#d9d9d9;
+}
+
+.lupa{
+    height: 1.5em;
+    margin-top:2.1%;    
+    margin-left: -2.3em;
+    cursor: pointer;
+    position: absolute;
+}
+/* Barra de navegação*/
+.navi{
+    width:100%;
+    height:12.6%;
+    background-color:#122258;
+    position: fixed;
+    z-index: 10;
+    display: flex;
+}
+
+.navi ul{
+    display: flex;
+    float:right;
+    text-decoration: none;
+    list-style:none;
+    margin-right:2%;
+    margin-left: 10%;
+    margin-top: 0.8%;
+}
+
+
+.navi ul li{
+    display: inline-block;
+    line-height: 70px;
+    margin-right:15px;
+}
+.navi ul li a{
+    text-decoration:none;
+    list-style: none;
+    color:#d9d9d9;
+    font-size:20px;
+    padding:7px 13px;
+    transition: 0.4s;
+    border-radius:10px;
+}
+
+
+.navi ul li a:hover{
+    background-color: LightSteelBlue;
+    color:black;
+}
+/*Fim da barra de navegação*/
+
+/*Inicio dos slides*/
+.slider{
+    margin-top:10.5em;
+    width: 43.75em;
+    height:30em;
+    overflow: hidden;
+}
+.slides{
+    width:100%;
+    height: 25em;
+    display:flex;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.slides input{
+    display: none;
+}
+
+.slide img{
+    width: 43.75em;
+    height: 25em;
+}
+
+.manual-navigation{
+    margin-top:10px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border:1px solid #d9d9d9;
+    padding:5px;
+    border-radius:10px;
+    cursor:pointer;
+    transition: 0.4s;
+}
+.manual-btn:not(:last-child){
+    margin-right:10px;
+}
+.manual-btn:hover{
+    background-color: LightSteelBlue;
+}
+#radio1:checked ~ .first{
+    margin-left:0;
+    transition: 1s;
+}
+#radio2:checked ~ .first{
+    margin-left: -100%;
+    transition: 1s;
+}
+#radio3:checked ~ .first{
+    margin-left: -200%;
+    transition: 1s;
+}
+/*fim dos slides*/
+
+
+
+/* Inicio da pagina*/
+#historia{
+
+    width: auto;
+    height:42.75em;
+    background: #414974;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+}
+#text-historia h1{
+    color:#7FD9A8;
+    font-size:45px;
+    margin-bottom:20px;
+    font-family:'Courier New', Courier, monospace;
+    
+}
+
+#text-historia{
+    width:35em;
+    height:30em;
+    margin-top: 7em;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+#text-historia p{
+        font-size:20px;
+}
+.idade {
+    height:3.5em;
+    display: flex;
+    margin-right: 31em;
+    margin-top:2em
+}
+#text-historia h4{
+    position:absolute;
+    margin-top: 9.4em;
+    margin-left: 20em;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    color:#F1D72C
+}
+.avalia{
+    height: 1.7em;
+    position: absolute;
+    margin-top: 14em;
+    margin-left: 17em;
+}
+/*fim do inicio da pagina*/
+
+
+/*Inicio da seção "personagem1"*/
+.historia-personagem1{
+    width:100%;
+    height:40.75em;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+    background-color:#20274A;
+}
+.historia-personagem1 p{
+    color:#d9d9d9;
+    font-size:19px;
+    width: 33em;
+}
+
+.historia-personagem1 h1{
+    color:#7FD9A8;
+    font-size:40px;
+    margin-bottom:20px;
+    font-family:'Courier New', Courier, monospace;
+}
+.text-personagem1{
+    width:600px;
+    height:400px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    margin-right: 90px;
+}
+.historia-personagem1 img{
+    width: 21em;
+    height: auto;
+    
+}
+.imagem-personagem1{
+    width: 21em;
+    height:25em;
+    border:2px solid;
+    border-radius:10px;
+    overflow:hidden;
+    margin-left:60px;
+}
+/*Fim da seção personagem1*/
+
+
+/*inicio da seção personagem2*/
+.historia-personagem2{
+    width: 100%;
+    height: 41.75em;;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1A1E37 ;
+}
+.historia-personagem2 p{
+    color: #d9d9d9;
+    font-size:19px;
+}
+.historia-personagem2 h1{
+    color:#7FD9A8;
+    font-size:40px;
+    font-family:'Courier New', Courier, monospace;
+    margin-bottom:30px;
+}
+.text-personagem2{
+    width:40em;
+    height:400px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    margin-left:70px;
+}
+.historia-personagem2 img{
+    width:21em;
+    height: auto;    
+}
+.imagem-personagem2{
+    width: 21em;
+    height:25em;
+    border:2px solid;
+    border-radius:10px;
+    margin-right:70px;
+    overflow: hidden;
+}
+/*Fim da seção "personagem2"*/
+
+/*Inicio da seção "melhores-momentos*/
+.melhores-momentos{
+    width:100%;
+    height: 41.75em;
+    background-color:#0E1120;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+    
+}
+.melhores-momentos h1{
+    color:#7FD9A8;
+    font-size: 40px;
+    font-family:'Courier New', Courier, monospace;
+    position: absolute;
+    margin-bottom: 10em;
+}
+.videos-momentos{
+    margin-top: 3em;
+    width: auto;
+    height: 15em;
+    
+    
+}
+.videos-momentos video{
+     width: auto;
+     height: 15em;
+     
+}
+/*Fim da seção "melhores-momentos*/
+
+.footer{
+    width:100%;
+    height:8em;
+    background: #06070e;
+    text-align: center;
+    justify-content: center;
+    display:flex;
+    
+}
+.footer h4{
+    margin-top: 4%;
+    font-size:80%;
+}
+
+@media screen and (min-width:400px) and (max-width:800px){
+    /*config-nav*/
+    .navi ul{
+        display: none;
+    }
+
+    .navi{
+        height: 5em;
+    }
+    /*fim config-barra*/
+
+    /*logo*/
+    label.logo img{
+        margin-top:1.3em;
+        height:2.5em;
+        width: auto;
+    }
+    /*fim logo*/
+
+
+    .pesquisa{
+        margin-left: 24%;
+    }
+
+    .src{
+        margin-top: 2.5em;
+        width: 100%;
+        height:30%;
+        margin-left: 5%;
+        font-size: 0.75em;
+    }
+    
+    .lupa{
+        margin-top: -1.75em;
+        margin-right:-25%;
+        width: 20%;
+        height:30%;
+    }
+
+
+    .lupa img{
+        margin-top: 2px;
+        height: 1.5em;
+     
+    }
+    /*config-slide*/
+    .slider{
+        margin-top: -4em;
+        position: absolute;
+        width: 90%;
+    }
+    .slides{
+        width:100%;
+        height: 15em;
+    }
+    .slides input{
+        display: none;
+    }
+    
+    .slide img{
+        width: 28.25em;
+        height: 15.7em;
+    }
+    .manual-navigation{
+        margin-top: 15px;
+       
+    }
+    #radio1:checked ~ .first{
+        margin-left: 0;
+        transition: 1s;
+    }
+    #radio2:checked ~ .first{
+        margin-left: -104%;
+        transition: 1s;
+    }
+    #radio3:checked ~ .first{
+        margin-left: -208%;
+        transition: 1s;
+    }
+    /*fim config-slide*/
+
+    /*seção-historia*/
+    #historia{
+        height:55em
+    }
+    
+    #text-historia{
+        width:25em;
+        height:10em;
+        margin-top:25em;
+        position: relative;
+      
+    }
+    #text-historia h1{
+        font-size: 30px;
+    }
+    
+    #text-historia p{
+        margin-bottom: 5em;
+         font-size:15px;
+    }
+    .idade{
+        position:absolute;
+        height:2.5em;
+        margin-left: 48em;
+        margin-top: 9em;
+    }
+    #text-historia h4{
+        margin-top: 7.6em;
+        margin-left: -18em;
+        font-size: 1.3em;
+    }
+    .avalia{
+        height:1.3em;
+        margin-top:9.5em ;
+        margin-left:-13em;
+    }
+    /*fim seção-historia*/
+
+    /*personagem1*/
+
+ 
+    .historia-personagem1 p{
+        font-size:12px;
+    }
+
+    .historia-personagem1 h1{
+        margin-top: 1em;
+        font-size:30px;
+    }
+    .text-personagem1{
+        width: 30em;
+        height: 20em;
+        margin-right: 0;
+        margin-top: 10em;
+    }
+    .historia-personagem1 img{
+        width: auto;
+        height:14em;
+        
+    }
+    .imagem-personagem1{
+        position:absolute;
+        width: auto;
+        height: 14em;
+        margin-bottom: 20em;
+        margin-left: 0;
+    }
+    /*fim-personagem1*/
+
+    /*personagem2*/
+
+    .historia-personagem2{
+        width: 100%;
+        height: 41.75em;;
+    }
+    .historia-personagem2 p{
+        font-size:12px;
+    }
+    .historia-personagem2 h1{
+        margin-top: 1em;
+        font-size:30px;
+    }
+    .text-personagem2{
+        width: 25em;
+        height: 20em;
+        margin-top: 10em;
+        margin-left: 0;
+    }
+    .historia-personagem2 img{
+        width:auto;
+        height:14em;  
+    }
+    .imagem-personagem2{
+        position:absolute;
+        width: auto;
+        height: 14em;
+        margin-bottom: 20em;
+        margin-right: 0;
+    }
+    /*fim-personagem2*/
+
+    /*mmelhores-momentos*/
+    .melhores-momentos h1{
+        font-size: 30px;
+        position: absolute;
+        margin-bottom: 8em;
+    }
+    .videos-momentos{
+        margin-top: 3em;
+        width: auto;
+        height: 8em;
+        justify-content: space-around;
+        
+    }
+    .videos-momentos video{
+        margin-top: 3em;
+        width: auto;
+        height: 5em;
+        
+    }
+    .melhores-momentos{
+        height: 25em;
+        display:flex;
+        flex-direction: row;
+       
+        
+    }
+    /*fim-melhores-momentos*/
+
+    /*footer*/
+    .footer{
+        height:7em
+    }
+    .footer h4{
+        margin-top: 4em;
+    }
+}

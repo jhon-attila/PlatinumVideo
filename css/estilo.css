@@ -1,0 +1,6 @@
+/*importação dos arquivos css*/
+@import './geral.css';
+@import './perfis.css';
+@import './login.css';
+@import './desc.css';
+@import './filmes.css';

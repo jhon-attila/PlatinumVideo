@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="css/index.css">
+<link rel= "short-cut icon" href="img_geral/pipoca.png">
+<title>Platinum Video</title>   
+</head>
+
+<body>
+   <!--plano de fundo-->
+<img src="Img_geral/logo1.png"class ="logo" alt="logo-image">
+
+ <form>
+   <!-- Caixa de texto "E-mail"-->
+       <div id="email">
+
+         <input type="email" id= "email-text" placeholder="Digite seu email"/> 
+         <div id="email-errado" class="email-incorreto">E-mail incorreto</div>
+      </div>
+   <!--Caixa de texto "Senha"-->  
+          <div class="senha">
+             <input type="password" id="senha-text" placeholder="Digite sua senha"/>
+             <div id="senha-errada" class="senha-incorreta">Senha incorreta</div>
+          </div>
+
+          <div id="inserir" class="inser">Insira as informações</div>
+          <!--APENAS DECORATIVO-->
+          <a href="cadastrar.html"><li>Esqueci minha senha</li></a>
+          <!--Botão de entrar-->
+         <div class="button">
+            <a id="button" class="btn" onclick="validar()"><h1>Entrar</h1></a>
+         </div> 
+          
+ 
+  </form>
+  <script src="login.js"></script>
+</body>
+</html>
